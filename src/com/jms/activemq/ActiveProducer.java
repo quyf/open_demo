@@ -12,7 +12,7 @@ public class ActiveProducer {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+		System.out.println("hello");
 	}
 
 }
