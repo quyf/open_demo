@@ -12,8 +12,10 @@ public class ReentrantLockTest {
 		Td t1=new Td(1);
 		Td t2=new Td(2);
 		Td t3=new Td(3);
+		Td t4=new Td(4);
 		t1.start();
 		t2.start();
+		t4.start();
 		t3.start();
 	}
 

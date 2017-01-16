@@ -21,8 +21,14 @@ public class Td extends Thread{
 	
 	public void run(){
 		try{  
+			System.out.println("begin thread-"+threadId+";lock");
 			lock.lock();
 			System.out.println("thread-"+threadId+";lock");
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			System.out.println("thread-"+threadId+";unlock");
 		}finally{
 			lock.unlock();
